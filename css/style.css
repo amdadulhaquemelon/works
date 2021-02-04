@@ -1,0 +1,397 @@
+/*+-----------------------------------------------------------+
+  |                                                           |
+  |    Template Name: Profile                                 |
+  |    Author:  melon mia                                     |
+  |    Author Email: amdadulhaquemelon15442@gmail.com         |
+  |    Version: 1.00                                          |
+  |                                                           |
+  +-----------------------------------------------------------+*/
+
+
+/*===========================
+    1. Theme default css 
+===========================*/
+
+
+/* Google Fonts Css */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap');
+
+/* Local Fonts Css */
+
+@font-face {
+    font-family: "adinekirnberg";
+    src: url("../fonts/adinekirnberg-script.regular.eot");
+    src: url("../fonts/adinekirnberg-script.regular.eot")format("embedded-opentype"), url("../fonts/adinekirnberg-script.regular.woff2")format("woff2"), url("../fonts/AdineKirnberg-Script.woff")format("woff"), url("../fonts/adinekirnberg-script.regular.ttf") format("truetype"), url("../fonts/AdineKirnberg-Script.svg")format("svg");
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+}
+
+.img {
+    max-width: 100%;
+    -webkit-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    vertical-align: middle;
+}
+
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+a:focus,
+a:hover {
+    text-decoration: none;
+}
+
+span,
+a {
+    display: inline-block;
+}
+
+a,
+button {
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: #003059;
+    font-weight: 500;
+}
+
+h1 {
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+ul,
+ol {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+p {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: #999999;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*== All Button Style ==*/
+
+.bg_cover {
+    background-position: center center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*== All section title here ==*/
+
+.section_title {
+    text-align: center;
+}
+
+
+/* BUTTON
+================================================== */
+
+.more_see {
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+.more_see a {
+    width: 145px;
+    line-height: 50px;
+    background: #4CC9F0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.more_see a::after,
+.more_see a::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #555555;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s linear;
+    -webkit-transition: all .4s linear;
+    -moz-transition: all .4s linear;
+    -ms-transition: all .4s linear;
+    -o-transition: all .4s linear;
+    z-index: -1;
+}
+
+.more_see a::before {
+    left: -100%;
+}
+
+.more_see a::after {
+    right: -100%;
+}
+
+.more_see:hover a::before {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.more_see:hover a::after {
+    right: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.page {
+    position: relative;
+    height: 100%;
+}
+
+
+/*===========================
+    HEADER CSS 
+===========================*/
+
+.social_link {
+    position: fixed;
+    top: 25%;
+    z-index: 99999;
+}
+
+.social_link ul {
+    text-align: center;
+    margin-top: 35px;
+    background: #4CC9F0;
+    padding: 15px 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.social_link ul li {
+    display: block;
+}
+
+.social_link ul li a {
+    width: 30px;
+    height: 30px;
+    background: #111;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 5px;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.social_link ul li a.profile_image {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 12px;
+    border: 2px solid #8fe4ff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+.social_link ul li a:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    background: #fff;
+    color: rgb(7, 6, 6);
+}
+
+
+/* PROFILE RIGHT */
+
+.profile .profile_right section {
+    overflow: hidden;
+    transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    -moz-transition: all .5s linear;
+    -ms-transition: all .5s linear;
+    -o-transition: all .5s linear;
+}
+
+
+/*===========================
+    OFFER CSS 
+===========================*/
+
+.my_portfolio {
+    position: relative;
+}
+
+.my_portfolio h2 {
+    text-shadow: 3px 3px 20px #fbbedd59, -7px 0px 78px #ff90c77a;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 86px;
+    font-size: 91px;
+    color: #fff;
+}
+
+.my_portfolio h4 {
+    position: absolute;
+    top: 60%;
+    font-size: 55px;
+    font-weight: 900;
+    color: #4cc9f0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.my_portfolio .single_portfolio {
+    position: relative;
+    margin-bottom: 60px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.my_portfolio .single_portfolio h5 {
+    position: absolute;
+    color: #fff;
+    z-index: 999;
+    bottom: 0;
+    text-align: center;
+    display: block;
+    background: #000;
+    width: 100%;
+    margin: 0;
+    padding: 17px 0px;
+    font-size: 23px;
+}
+
+.my_portfolio .single_portfolio .por_image {
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.my_portfolio .single_portfolio .por_image .new {
+    position: absolute;
+    color: red;
+    top: 10px;
+    right: 10px;
+    background: #ffffff;
+    padding: 3px 10px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 2px;
+    box-shadow: rgb(50 50 93 / 25%) 0px 50px 100px -20px, rgb(0 0 0 / 30%) 0px 30px 60px -30px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.my_portfolio .single_portfolio .por_image .new.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.my_portfolio .single_portfolio .por_image .overlay {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: 0;
+    background: rgba(76, 202, 240, 0.589);
+    border-bottom-right-radius: 20px;
+}
+
+.my_portfolio .single_portfolio .por_image:hover .overlay {
+    width: 100%;
+    height: 100%;
+    border-bottom-right-radius: 0;
+}
+
+.my_portfolio .single_portfolio .por_image .overlay i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.my_portfolio .single_portfolio:hover .por_image .overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.my_portfolio .sub_title {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.my_portfolio .sub_title h2 {
+    font-size: 22px;
+    color: #000;
+}

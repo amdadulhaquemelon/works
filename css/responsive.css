@@ -1,0 +1,317 @@
+/* Normal desktop :1200px. */
+
+@media (min-width: 1200px) and (max-width: 1500px) {
+    /*======================
+    Index Page Css
+========================*/
+}
+
+
+/* Normal desktop :992px. */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /*======================
+    Index Page Css
+========================*/
+    .profile_right .home_page {
+        padding-top: 145px;
+        padding-left: 0px;
+    }
+    .profile_right .home_page .text h1 {
+        font-size: 35px;
+    }
+    .about_me h2 {
+        font-size: 80px;
+    }
+    .about_me h4 {
+        font-size: 45px;
+    }
+    .about_me .personal_info {
+        margin-left: 0px;
+    }
+    .my_portfolio h2 {
+        font-size: 65px;
+    }
+    .my_portfolio h4 {
+        font-size: 37px;
+    }
+    .Contact_me h2 {
+        font-size: 75px;
+    }
+    .Contact_me h4 {
+        font-size: 40px;
+    }
+    .preloader .preloder_text h1 {
+        font-size: 22px;
+    }
+}
+
+
+/* Tablet desktop :768px. */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /*======================
+    Index Page Css
+========================*/
+    .profile .profile_left {
+        width: 285px;
+    }
+    .profile_left .profile_left_inner {
+        padding: 35px;
+    }
+    .profile_left .profile_left_inner .profile_menu ul li {
+        margin-bottom: 15px;
+    }
+    .social_link ul {
+        padding: 5px 5px;
+    }
+    .social_link ul li a {
+        margin: 0px 3px;
+    }
+    .profile .profile_right {
+        padding-left: 285px;
+    }
+    .profile_right .home_page {
+        padding-top: 90px;
+        padding-left: 0px;
+    }
+    .profile_right .home_page .text h4 {
+        font-size: 16px;
+    }
+    .profile_right .home_page .text h1 {
+        font-size: 25px;
+    }
+    .profile_right .home_page .text p {
+        line-height: 24px;
+    }
+    .about_me h2 {
+        font-size: 65px;
+    }
+    .about_me h4 {
+        font-size: 35px;
+    }
+    .about_me .personal_info {
+        margin-left: 0px;
+    }
+    .my_portfolio h2 {
+        margin-top: 35px;
+        font-size: 35px;
+    }
+    .my_portfolio h4 {
+        font-size: 22px;
+    }
+    .Contact_me h2 {
+        margin-top: 35px;
+        font-size: 45px;
+    }
+    .Contact_me h4 {
+        font-size: 30px;
+        top: 45%;
+    }
+    .Contact_me .contuct_from form {
+        padding: 9px 0px;
+    }
+    .preloader .preloder_text h1 {
+        font-size: 22px;
+    }
+}
+
+
+/* small mobile :320px. */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /*======================
+    Index Page Css
+========================*/
+    .profile .profile_left {
+        width: 200px;
+    }
+    .profile_left .profile_left_inner .profile_image {
+        width: 120px;
+        height: 120px;
+    }
+    .profile_left .profile_left_inner {
+        padding: 10px;
+    }
+    .profile_left .profile_left_inner .profile_menu ul li {
+        margin-bottom: 5px;
+    }
+    .profile_left .profile_left_inner .profile_menu ul li a {
+        width: 100%;
+    }
+    .social_link ul {
+        padding: 5px 5px;
+    }
+    .social_link ul li a {
+        margin: 0px 3px;
+        width: 25px;
+        height: 25px;
+        font-size: 10px;
+        line-height: 25px;
+    }
+    .profile .profile_right {
+        padding-left: 200px;
+    }
+    .profile_right .home_page {
+        padding-top: 90px;
+        padding-left: 0px;
+    }
+    .profile_right .home_page .text h4 {
+        font-size: 16px;
+    }
+    .profile_right .home_page .text h1 {
+        font-size: 20px;
+    }
+    .profile_right .home_page .text p {
+        line-height: 24px;
+    }
+    .profile_right .home_page .text a {
+        margin-top: 25px;
+        padding: 10px 16px;
+    }
+    .profile_right .home_page .text a .text {
+        font-size: 14px;
+    }
+    .about_me h2 {
+        font-size: 45px;
+        margin-top: 50px;
+    }
+    .about_me h4 {
+        font-size: 25px;
+        top: 12px;
+    }
+    .about_me .personal_info {
+        margin-left: 0px;
+        padding-top: 30px;
+    }
+    .about_me .personal_info .details ul li .left {
+        font-size: 15px;
+    }
+    .about_me .personal_info .details ul li .right {
+        font-size: 12px;
+        font-weight: 400;
+    }
+    .skill_box.php {
+        margin-top: 30px;
+    }
+    .my_portfolio h2 {
+        margin-top: 20px;
+        font-size: 35px;
+    }
+    .my_portfolio h4 {
+        font-size: 19px;
+        top: 35%;
+    }
+    .Contact_me h2 {
+        margin-top: 35px;
+        font-size: 45px;
+    }
+    .Contact_me h4 {
+        font-size: 22px;
+        top: 50%;
+    }
+    .Contact_me .contuct_from form {
+        padding: 9px 0px;
+    }
+    .preloader .preloder_text h1 {
+        font-size: 22px;
+    }
+}
+
+
+/* Large Mobile :480px. */
+
+@media only screen and (max-width: 575.98px) {
+    /*======================
+    Index Page Css
+========================*/
+    .profile .profile_right {
+        padding-left: 0px;
+    }
+    .profile_right .home_page {
+        padding-top: 100px;
+        padding-left: 0px;
+    }
+    .profile_right .home_page .text h4 {
+        text-align: center;
+        font-size: 15px;
+    }
+    .profile_right .home_page .text h1 {
+        font-size: 16px;
+    }
+    .profile_right .home_page p {
+        line-height: 26px;
+    }
+    .profile_right .home_page .text a {
+        margin-bottom: 50px;
+        margin-left: 5%;
+    }
+    .about_me h2 {
+        font-size: 55px;
+    }
+    .about_me h4 {
+        font-size: 22px;
+    }
+    .about_me .personal_info {
+        margin-left: 0px;
+    }
+    .about_me .personal_info h3 {
+        font-size: 18px;
+    }
+    .about_me .personal_info .details ul li .left {
+        font-size: 14px;
+    }
+    .about_me .personal_info .details ul li .right {
+        margin-left: 3px;
+        font-size: 14px;
+    }
+    .my_skills .name {
+        margin-top: 15px;
+        margin-bottom: 50px;
+    }
+    .name.php {
+        margin-bottom: 0;
+    }
+    .my_portfolio h2 {
+        font-size: 35px;
+    }
+    .my_portfolio h4 {
+        font-size: 17px;
+    }
+    .my_portfolio .sub_title {
+        margin: 0px 0;
+    }
+    .Contact_me h2 {
+        font-size: 45px;
+    }
+    .Contact_me h4 {
+        font-size: 20px;
+    }
+    .Contact_me .contuct_from form {
+        padding: 0px 0px;
+    }
+    .Contact_me .contuct_from form input {
+        width: 94%;
+        margin-bottom: 20px;
+    }
+    .Contact_me .contuct_from form button {
+        margin-left: 25%;
+    }
+    .fixed-top {
+        z-index: 9999999;
+    }
+    .profile_menu {
+        text-align: center;
+    }
+    .profile_menu li {
+        padding: 10px 0;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+    .profile_menu li a {
+        color: #fff;
+    }
+    .profile_menu li a i {
+        margin-right: 7px;
+    }
+}
